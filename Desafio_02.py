@@ -46,9 +46,11 @@ for x in range(3):
             empate+=1
             print("Empatou!")
 
-if cont1 >= 2:
-    print("Jogador 1 venceu o jogo!")
-elif cont2 >= 2:
-    print("Jogador 2 venceu o jogo!")
-else:
-    print("O jogo terminou em empate!")
+    if cont1 == 2:
+        print("Jogador 1 venceu o jogo!")
+        exit()
+    elif cont2 == 2:
+        print("Jogador 2 venceu o jogo!")
+        exit()
+    elif empate == 3:
+        print("O jogo terminou em empate!")
