@@ -1,0 +1,43 @@
+package exercicios;
+
+public class atividade02_07 {
+
+	public static void main(String[] args) {
+		int num[] = {20, 17, 22, 18, 36, 57, 33}, num2[] = new int[7];
+		
+		//1. Imprima reverso
+		for(int x = num.length-1; x >= 0; x--) {
+			System.out.println(num[x]);
+		}
+
+		
+		//2. Guarde em outro array (reverso)
+		for(int y = num.length-1; y >= 0; y--) {
+			num2[y] = num[y]; 
+		System.out.println(num2[y]);
+		}
+
+		//3. Imprimir o array em ordem crescente
+		for (int z = 0; z < num.length; z++) {
+			for (int c = 0; c < num.length - 1; c++) {
+				if (num[c] > num[c+1]) {
+					int cont = num[c];
+					num[c] = num[c+1];
+					num[c+1] = cont;
+					
+				}
+
+			}
+		}
+		for (int a = 0; a < num.length; a++) {
+			System.out.println(num[a]);
+		}
+		
+		//4. Refazer o primeiro sem inverter o for
+		for (int b = 0; b < num.length; b++) {
+			System.out.printf(" %d", num[num.length-1 - b]);
+		}
+
+		}
+
+	}
